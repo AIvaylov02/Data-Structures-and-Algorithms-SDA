@@ -19,7 +19,7 @@ private:
     int verticesCount;
     std::unordered_map<int, std::vector<int>> adjecent; // starting Adjacent nodes
     std::unordered_map<int, std::unordered_set<int>*> searchDict; // dict, which holds info for the different components(set). Each element of the set is a key to this set. That way we have const search time
-    std::unordered_map<int, std::unordered_set<int>*> holdsMemoryVals; // used for cleaning up yhe memory from the dynamic sets (the uploaded solution had memory leakage)
+    std::unordered_map<int, std::unordered_set<int>*> holdsMemoryVals; // used for cleaning up the memory from the dynamic sets (the uploaded solution had memory leakage)
 
     void free();
     void UtilDFS(int currNode, std::vector<int>& currNums, std::unordered_set<int>& pool);
